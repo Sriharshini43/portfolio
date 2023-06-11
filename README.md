@@ -1,6 +1,4 @@
-<p align="center">This website is an opportunity to demonstrate a <b>Portfolio</b> of information about me and to provide further information (via links) about my work.<p>
-
-  ### <code>Live Demo</code> - **[Portfolio Website]**
+ ### <code>Live Demo</code> - **[Portfolio Website](https://myselfnotebook.netlify.app/)**
 
 # Website Preview
   This is a portfolio of my work, including both my personal and academic projects.
