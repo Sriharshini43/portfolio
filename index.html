@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRIHARSHINI - Portfolio</title>
+    <meta name="description" content="Sriharshini's professional portfolio - Full Stack Developer specializing in React.js and Node.js">
+    <meta name="keywords" content="portfolio, web developer, full stack, react, nodejs, sriharshini">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active" data-section="home"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="#facts" class="nav-link" data-section="facts"><i class="fas fa-chart-bar"></i><span>Facts</span></a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="#resume" class="nav-link" data-section="resume"><i class="fas fa-file-alt"></i><span>Resume</span></a></li>
+            <li><a href="#portfolio" class="nav-link" data-section="portfolio"><i class="fas fa-briefcase"></i><span>Projects</span></a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">SRIHARSHINI</h1>
+                <p class="hero-subtitle">I'm a <span class="typed-text"></span><span class="cursor">|</span></p>
+                <div class="social-links">
+                    <a href="https://github.com/Sriharshini43" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/palaka-sriharshini-aa0781226/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="assets/img/user.jpg" alt="Profile" class="profile-img">
+                    </div>
+                    <div class="about-text" style="text-align: justify;">
+                        <p>I'm <strong>SRIHARSHINI</strong>, a passionate web developer specializing in Full Stack Development.I focus on building responsive, modern web applications using React.js for user-friendly interfaces and Node.js with Express.js for scalable server-side applications.My education at KL University has provided me with a strong foundation in computer science and programming principles.</p>
+                        <p>I am proficient in C, and I have solid knowledge of Core Java, JavaScript, HTML, CSS, Node.js, and Express.js.I’ve completed several hands-on projects that highlight my ability to design and develop end-to-end web solutions, demonstrating both front-end finesse and back-end logic.</p>
+                        <p>Currently, I’m deepening my backend expertise by exploring MongoDB and MySQL, with a focus on developing RESTful APIs and managing databases efficiently.I'm passionate about creating practical, impactful solutions that solve real-world problems and enhance user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facts Section -->
+        <section id="facts" class="facts">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Facts</h2>
+                </div>
+                <div class="facts-grid">
+                    <div class="fact-item">
+                        <i class="fas fa-code"></i>
+                        <span class="fact-number" data-target="2">0</span>
+                        <p>React Projects</p>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-book"></i>
+                        <span class="fact-number" data-target="50">0</span>
+                        <p>Academic Courses</p>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-award"></i>
+                        <span class="fact-number" data-target="16">0</span>
+                        <p>Certificates</p>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span class="fact-number" data-target="2">0</span>
+                        <p>Major Projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+            <h2>Skills</h2>
+            <p>Professional skill set based on acquired knowledge and experience</p>
+            </div>
+            <div id="skills-container" class="skills-categories"></div>
+        </div>
+        </section>
+
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <div class="download-btn">
+                        <a href="Resume.pdf" class="btn-download">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="resume-content">
+                    <div class="resume-column">
+                        <h3 class="resume-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>B.Tech - Computer Science Engineering</h4>
+                                    <span class="timeline-date">2021 - 2025</span>
+                                    <p>KL University, Vaddeswaram, Vijayawada</p>
+                                    <p class="grade">CGPA: 9.5</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>12th Grade - State Board</h4>
+                                    <span class="timeline-date">2019 - 2021</span>
+                                    <p>Aditya College, Palakollu</p>
+                                    <p class="grade">Marks: 905/1000</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>10th Grade - State Board</h4>
+                                    <span class="timeline-date">2018 - 2019</span>
+                                    <p>Sri Chaitanya Techno School, Palakollu</p>
+                                    <p class="grade">CGPA: 9.8</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-column">
+                        <h3 class="resume-title">
+                            <i class="fas fa-certificate"></i>
+                            Certifications
+                        </h3>
+                        <div class="certifications">
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AZ-900: Azure Fundamentals by Microsoft</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AI-900: Azure AI Fundamentals by Microsoft</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Red Hat Certified Enterprise Application Developer</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Become a Full Stack Developer - LinkedIn Learning</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>AWS Certified Cloud Practitioner</span>
+                            </div>
+                            <div class="cert-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Become a Web Developer - Microsoft Learning Path</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <p>Portfolio of personal and academic projects</p>
+                </div>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="academic">Academic Projects</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/img/Myweb.png" alt="Portfolio Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://myselfnotebook.netlify.app" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Sriharshini43/portfolio" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Personal portfolio website showcasing skills and projects</p>
+                            <div class="portfolio-tech">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/img/climate.png" alt="Weather App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://accuclimate.netlify.app" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Sriharshini43/Weather" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Weather App</h3>
+                            <p>Real-time weather forecast application</p>
+                            <div class="portfolio-tech">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>Html</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/img/Budgets.png" alt="Budget Tracker">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://my-budgets.vercel.app" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Sriharshini43/My_Budgets" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Budget Tracker</h3>
+                            <p>Personal finance management application</p>
+                            <div class="portfolio-tech">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/img/Electronics.png" alt="E-commerce Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://github.com/Sriharshini43/Ecommerce-website" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Full-stack e-commerce solution</p>
+                            <div class="portfolio-tech">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Java</span>
+                                <span>JDBC Servlet</span>
+                                <span>JSP</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="academic">
+                        <div class="portfolio-image">
+                            <img src="assets/img/starevents.png" alt="Event Management System">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://sriharshini.netlify.app/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Sriharshini43/Star-Events" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Event Management System</h3>
+                            <p>Comprehensive event planning and management system</p>
+                            <div class="portfolio-tech">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <img src="assets/img/lms.png" alt="Library Management System">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-links">
+                                    <a href="https://lms-nine-kappa.vercel.app" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/Sriharshini43/LMS" class="portfolio-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Library Management System</h3>
+                            <p>Digital library management solution</p>
+                            <div class="portfolio-tech">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Looking forward to hearing from you</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p>Visakhapatnam, INDIA</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone Number</h3>
+                        <p>+91 8341139934</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>harshinipspk@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h4>SRIHARSHINI</h4>
+            <div class="social-links">
+                <a href="https://github.com/Sriharshini43" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/palaka-sriharshini-aa0781226/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p><strong>Thank you for visiting!</strong></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
