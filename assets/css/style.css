@@ -349,6 +349,16 @@ section {
 }
 
 /* Skills Section */
+.skills {
+  text-align: left;
+}
+
+.skills .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
 .skills-layout {
   display: flex;
   flex-direction: column;
