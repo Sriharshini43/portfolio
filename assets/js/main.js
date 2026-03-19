@@ -44,7 +44,7 @@ class TypeWriter {
 // Initialize typing animation when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     const txtElement = document.querySelector('.typed-text');
-    const words = ['Web Developer', 'Software Engineer', 'Full Stack Developer'];
+    const words = ['Web Developer', 'Quality Analyst'];
     
     if (txtElement) {
         new TypeWriter(txtElement, words, 2000);
@@ -313,7 +313,8 @@ const skills = [
 { name: "Eclipse", icon: "https://img.icons8.com/?size=100&id=2GRTwFZR2Tqj&format=png&color=000000" },
 { name: "Git", icon: "https://img.icons8.com/color/48/000000/git.png" },
 { name: "TypeScript", icon: "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" },
-{ name: "Docker", icon: "https://img.icons8.com/color/48/000000/docker.png" } 
+{ name: "Selenium", icon: "https://img.icons8.com/?size=100&id=VOnRj9vGpXV8&format=png&color=000000" },
+{ name: "Playwright", icon: "https://img.icons8.com/?size=100&id=13951&format=png&color=000000" }
 ];
 
 const categories = {
@@ -321,7 +322,7 @@ const categories = {
 "Backend": ["NodeJS", "ExpressJS"],
 "Database": ["MongoDB", "MySQL"],
 "Programming": ["Java", "Python", "C"],
-"Tools": ["Netlify", "Vercel", "Docker", "VSCode", "Eclipse", "Git"]
+"Tools": ["Netlify", "Vercel", "VSCode", "Eclipse", "Git", "Selenium", "Playwright"]
 };
 
 const rowOrder = [
