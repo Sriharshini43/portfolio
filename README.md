@@ -1,4 +1,4 @@
- ### <code>Live Demo</code> - **[Portfolio Website](https://myselfnotebook.netlify.app/)**
+ ### <code>Live Demo</code> - **[Portfolio Website](https://sriharshini.netlify.app)**
 
 # Website Preview
   This is a portfolio of my work, including both my personal and academic projects.
