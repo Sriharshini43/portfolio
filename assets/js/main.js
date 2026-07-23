@@ -307,13 +307,12 @@ const skills = [
 { name: "MongoDB", icon: "https://img.icons8.com/color/48/000000/mongodb.png" },
 { name: "MySQL", icon: "https://img.icons8.com/color/48/000000/mysql-logo.png" },
 { name: "Netlify", icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" },
-{ name: "C", icon: "https://img.icons8.com/color/48/000000/c-programming.png" },
-{ name: "Vercel", icon: "https://img.icons8.com/?size=100&id=aVM0CHwkTZGB&format=png&color=1A1A1A" },
 { name: "VSCode", icon: "https://img.icons8.com/color/48/000000/visual-studio-code-2019.png" },
 { name: "Eclipse", icon: "https://img.icons8.com/?size=100&id=2GRTwFZR2Tqj&format=png&color=000000" },
 { name: "Git", icon: "https://img.icons8.com/color/48/000000/git.png" },
 { name: "TypeScript", icon: "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" },
-{ name: "Selenium", icon: "https://img.icons8.com/?size=100&id=VOnRj9vGpXV8&format=png&color=000000" },
+{ name: "Postman", icon: "https://img.icons8.com/?size=100&id=QEQQKirln6Tf&format=png&color=000000" },
+{ name: "Swagger", icon: "https://img.icons8.com/?size=100&id=rdKV2dee9wxd&format=png&color=000000" },
 { name: "Playwright", icon: "https://img.icons8.com/?size=100&id=13951&format=png&color=000000" }
 ];
 
@@ -321,8 +320,8 @@ const categories = {
 "Frontend": ["ReactJS", "HTML5", "CSS3", "JavaScript", "TypeScript"],
 "Backend": ["NodeJS", "ExpressJS"],
 "Database": ["MongoDB", "MySQL"],
-"Programming": ["Java", "Python", "C"],
-"Tools": ["Netlify", "Vercel", "VSCode", "Eclipse", "Git", "Selenium", "Playwright"]
+"Programming": ["Java", "Python"],
+"Tools": ["Netlify", "Postman", "VSCode", "Eclipse", "Git", "Playwright", "Swagger"]
 };
 
 const rowOrder = [
